@@ -308,21 +308,21 @@ export default function Navbar() {
               {isProfileOpen && (
                 <div className="absolute right-0 mt-2 w-48 bg-background border border-border/50 rounded-xl shadow-2xl backdrop-blur-xl overflow-hidden animate-in fade-in slide-in-from-top-2 duration-200">
                   <Link
-                    href="/dashboard"
+                    href="/student-dashboard/save-course"
                     onClick={() => setIsProfileOpen(false)}
                     className="flex items-center gap-3 px-4 py-3 hover:bg-yellow-400/10 text-foreground/90 transition-colors"
                   >
                     <LayoutDashboard className="w-4 h-4" />
                     <span className="font-medium">Dashboard</span>
                   </Link>
-                  <Link
+                  {/* <Link
                     href="/admin/dashboard/overview"
                     onClick={() => setIsMobileMenuOpen(false)}
                     className="flex items-center gap-3 px-4 py-2 text-foreground/90 hover:bg-yellow-400/10 rounded-lg font-semibold"
                   >
                     <TextSearch className="w-5 h-5" />
                     <span>Admin Dashboard</span>
-                  </Link>
+                  </Link> */}
                   <button
                     onClick={handleLogout}
                     className="flex items-center gap-3 px-4 py-3 hover:bg-red-500/10 text-red-500 w-full text-left transition-colors cursor-pointer"
